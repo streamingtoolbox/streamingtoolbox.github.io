@@ -1,0 +1,78 @@
+body {
+    background: #191919;
+    color: #D2D2D2;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 979px) {
+    body {
+      padding-top: 0px;
+    }
+  }
+p {
+    opacity: .6;
+}
+a{
+    color: #48cfad;
+}
+a:hover {
+    color: #48cfad;
+}
+
+.bg-alt {
+    background: #292929;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+.btn-mint{
+    background: #48CFAD;
+    color: #282828;
+}
+.footer-style{
+    margin-top: 100px;
+    background: #222;
+    padding: 12px;
+}
+
+a.navbar-brand {
+    padding: 5px 0px;
+}
+
+.navbar-brand img{
+    max-height: 40px;
+}
+
+.navbar-fixed-top{
+    border: 0;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+}
+
+.navbar-inverse{
+    background-color: #282828;
+    opacity: 1;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.navbar-inverse .navbar-brand{
+    color: #48CFAD;
+
+}
+.navbar-inverse .navbar-nav .active a{
+    background-color: #191919;
+}
+.raised-block {
+    background-color: #282828;
+    border-radius: 5px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25);
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: -10px;
+    padding: 10px;
+}
+
+.sthead {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
