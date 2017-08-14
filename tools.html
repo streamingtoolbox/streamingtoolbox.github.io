@@ -9,7 +9,8 @@
     <title>Streaming Toolbox</title>
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/5916246e55.js"></script>
 
     <!-- Latest compiled and minified CSS -->
@@ -27,7 +28,7 @@
 
 
 <!-- navbar -->
-<body>
+<body data-spy="scroll" data-target=".sidebar">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -60,13 +61,13 @@
 <!-- Sidebar -->
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 col-md-2 sidebar">
+          <div class="col-sm-3 col-md-2 sidebar" id="mySidebar">
             <ul class="nav nav-sidebar">
-              <li class="active"><a href="#">Streaming Software<span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Alerts</a></li>
-              <li><a href="#">Bots</a></li>
-              <li><a href="#">Chat</a></li>
-              <li><a href="#">Design</a></li>
+              <li><a href="#streaming-software">Streaming Software</a></li>
+              <li><a href="#alerts">Alerts</a></li>
+              <li><a href="#bots">Bots</a></li>
+              <li><a href="#chat">Chat</a></li>
+              <li><a href="#design">Design</a></li>
               <li><a href="#">Browser Extensions</a></li>
               <li><a href="#">Stats</a></li>
               <li><a href="#">Money</a></li>
@@ -78,40 +79,198 @@
                 <h1 class="page-header text-center">Tools</h1>
             </div>
 
-            <h2 class="sub-header">Streaming Software</h2>
-            <div class="table-responsive">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Price</th>
-                    <th>OS</th>
-                    <th>Guides</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><a href="https://obsproject.com/">OBS Studio</a></td>
-                    <td>Free (FOSS)</td>
-                    <td><i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> </td>
-                    <td><a href="#">Guides</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="https://www.xsplit.com/">X-Split</a></td>
-                    <td>Free starter/subscrption $2.50+/Lifetime $180 </td>
-                    <td><i class="fa fa-windows" aria-hidden="true"></i></td>
-                    <td><a href="#">Guides</a></td>
-                  </tr>
-                  <tr>
-                    <td><a href="https://www.golightstream.com/">Lightstream</a></td>
-                    <td>Free</td>
-                    <td><i class="fa fa-windows" aria-hidden="true"> <i class="fa fa-apple" aria-hidden="true"> <i class="fa fa-linux" aria-hidden="true">*</td>
-                    <td>Guides</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p>*No desktop app support for Linux</p>
+            <!-- Streaming Software -->
+            <div class="section" >
+              <h2 class="sub-header text-center"><span id="streaming-software"></span> Software</h2>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>OS</th>
+                      <th>Guides</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="https://obsproject.com/">OBS Studio</a></td>
+                      <td>Free (FOSS)</td>
+                      <td><i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> </td>
+                      <td><a href="#">Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.xsplit.com/">X-Split</a></td>
+                      <td>Free starter/subscrption $2.50+/Lifetime $180 </td>
+                      <td><i class="fa fa-windows" aria-hidden="true"></i></td>
+                      <td><a href="#">Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.golightstream.com/">Lightstream</a></td>
+                      <td>Free</td>
+                      <td><i class="fa fa-windows" aria-hidden="true"> <i class="fa fa-apple" aria-hidden="true"> <i class="fa fa-linux" aria-hidden="true">*</td>
+                      <td>Guides</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>*No desktop app support for Linux</p>
+              </div>
             </div>
+
+            <!-- Alerts -->
+            <div class="section">
+              <h2 class="sub-header text-center"><span id="alerts"></span>Alerts</h2>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>OS</th>
+                      <th>Guides</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="https://obsproject.com/">OBS Studio</a></td>
+                      <td>Free (FOSS)</td>
+                      <td><i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> </td>
+                      <td><a href="#">Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.xsplit.com/">X-Split</a></td>
+                      <td>Free starter/subscrption $2.50+/Lifetime $180 </td>
+                      <td><i class="fa fa-windows" aria-hidden="true"></i></td>
+                      <td><a href="#">Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.golightstream.com/">Lightstream</a></td>
+                      <td>Free</td>
+                      <td><i class="fa fa-windows" aria-hidden="true"> <i class="fa fa-apple" aria-hidden="true"> <i class="fa fa-linux" aria-hidden="true">*</td>
+                      <td>Guides</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Bots -->
+            <div class="section">
+              <h2 class="sub-header text-center"><span id="bots"></span>Bots</h2>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>OS</th>
+                      <th>Guides</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="https://obsproject.com/">OBS Studio</a></td>
+                      <td>Free (FOSS)</td>
+                      <td><i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> </td>
+                      <td><a href="#">Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.xsplit.com/">X-Split</a></td>
+                      <td>Free starter/subscrption $2.50+/Lifetime $180 </td>
+                      <td><i class="fa fa-windows" aria-hidden="true"></i></td>
+                      <td><a href="#">Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.golightstream.com/">Lightstream</a></td>
+                      <td>Free</td>
+                      <td><i class="fa fa-windows" aria-hidden="true"> <i class="fa fa-apple" aria-hidden="true"> <i class="fa fa-linux" aria-hidden="true">*</td>
+                      <td>Guides</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Chat -->
+            <div class="section">
+              <h2 class="sub-header text-center"><span id="chat"></span>Chat</h2>
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>OS</th>
+                      <th>Guides</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><a href="https://obsproject.com/">OBS Studio</a></td>
+                      <td>Free (FOSS)</td>
+                      <td><i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> </td>
+                      <td><a href="#">Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.xsplit.com/">X-Split</a></td>
+                      <td>Free starter/subscrption $2.50+/Lifetime $180 </td>
+                      <td><i class="fa fa-windows" aria-hidden="true"></i></td>
+                      <td><a href="#">Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="https://www.golightstream.com/">Lightstream</a></td>
+                      <td>Free</td>
+                      <td><i class="fa fa-windows" aria-hidden="true"> <i class="fa fa-apple" aria-hidden="true"> <i class="fa fa-linux" aria-hidden="true">*</td>
+                      <td>Guides</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>    
+            
+            <!-- Design -->
+            <div class="section">
+                <h2 class="sub-header text-center"><span id="design"></span>Design</h2>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>OS</th>
+                        <th>Guides</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="https://obsproject.com/">OBS Studio</a></td>
+                        <td>Free (FOSS)</td>
+                        <td><i class="fa fa-windows" aria-hidden="true"></i> <i class="fa fa-apple" aria-hidden="true"></i> <i class="fa fa-linux" aria-hidden="true"></i> </td>
+                        <td><a href="#">Guides</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://www.xsplit.com/">X-Split</a></td>
+                        <td>Free starter/subscrption $2.50+/Lifetime $180 </td>
+                        <td><i class="fa fa-windows" aria-hidden="true"></i></td>
+                        <td><a href="#">Guides</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="https://www.golightstream.com/">Lightstream</a></td>
+                        <td>Free</td>
+                        <td><i class="fa fa-windows" aria-hidden="true"> <i class="fa fa-apple" aria-hidden="true"> <i class="fa fa-linux" aria-hidden="true">*</td>
+                        <td>Guides</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>             
+
+
+
+
+
+
+
           </div>
         </div>
       </div>
@@ -131,7 +290,34 @@
 
 
 
-
+<script>
+    $(document).ready(function(){
+      // Add scrollspy to <body>
+      $('body').scrollspy({target: ".sidebar", offset: 50});   
+    
+      // Add smooth scrolling on all links inside the navbar
+      $("#mySidebar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 400, function(){
+        
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        }  // End if
+      });
+    });
+    </script>
 
 
 
