@@ -21,7 +21,7 @@ a:hover {
 
 .bg-alt {
     background: #292929;
-    border-radius: 5px;
+    border-radius: 0;
     margin-top: 100px;
 }
 .btn-mint{
