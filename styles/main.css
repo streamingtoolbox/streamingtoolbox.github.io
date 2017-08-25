@@ -61,6 +61,28 @@ a.navbar-brand {
 .navbar-inverse .navbar-nav .active a{
     background-color: #191919;
 }
+
+.nav-tabs {
+    border-bottom:2px solid #292929;
+}
+.nav-tabs>li.active>a {
+    background-color: #292929;
+    color: #48cfad;
+    border: 1px solid #292929;
+}
+.nav-tabs>li>a:hover {
+    background-color: #282828;
+    border: 1px solid #282828;
+}
+
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+    color: #48CFAD;
+    cursor: default;
+    background-color: #292929;
+    border: 1px solid #292929;
+}
 .raised-block {
     background-color: #282828;
     border-radius: 3px;
